@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta name="theme-color" content="#6750A4">
+    <title>Генератор персонажей</title>
+    <link rel="manifest" href="manifest.json">
+    <script defer src="main.dart.js" type="application/javascript"></script>
+</head>
+<body>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('flutter_service_worker.js');
+            });
+        }
+    </script>
+    <div id="loading">
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <div style="text-align: center;">
+                <h2>Генератор персонажей</h2>
+                <p>Загрузка...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
